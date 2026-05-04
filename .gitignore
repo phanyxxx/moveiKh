@@ -7,33 +7,53 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
+# Dependencies
+node_modules/
 
-# Editor directories and files
+# Build outputs
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Tests & Coverage
+coverage/
+/cypress/videos/
+/cypress/screenshots/
+__screenshots__/
+
+# Local env files
+*.local
+.env
+.env.*
+!.env.example
+
+# Editor settings
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-*.tsbuildinfo
-
+# Linting
 .eslintcache
 
-# Cypress
-/cypress/videos/
-/cypress/screenshots/
-
-# Vitest
-__screenshots__/
-
-# Vite
+# Vite temp files
 *.timestamp-*-*.mjs
+
+# --- THE FIX FOR IMAGES ---
+# Ensure the public directory is NOT ignored
+!/public/
+# If you previously ignored all images globally, un-ignore them for public:
+!/public/**/*.png
+!/public/**/*.jpg
+!/public/**/*.jpeg
+!/public/**/*.svg
+!/public/**/*.webp
+!/public/**/*.ico
