@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none !important;
+}
+h4{
+  color: #1b39bd !important;
+}
+.menu{
+  background-color: #4361ee;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.menu-box ul{
+  display: flex;
+  align-items: center;      /* vertical center */
+  padding: 0;               /* remove default ul padding */
+  margin: 0;
+}
+.menu-box ul li a{
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+  /* text-decoration: none; */
+  cursor: pointer;
+}
+.menu-box ul li a:hover{
+  background-color: #3858e9;
+}
+
+/* home */
+
+/* Border box header */
+.border-box {
+  height: 40px;
+  border: 1px solid #3858e9;
+  background-color: #1b39bd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  /* border-radius: 6px; */
+  user-select: none;
+}
+
+.border-box p {
+  margin: 0;
+  font-weight: bold;
+  cursor: default;
+}
+
+.border-box .p2 {
+  cursor: pointer;
+  background-color: #3155ab;
+  padding: 4px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.border-box .p2:hover,
+.border-box .p2:focus {
+  background-color: #253d8c;
+  outline: none;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  padding-right: 10px;
+}
+
+/* ===== HEADER ===== */
+/* .border-box {
+  padding: 10px 14px;
+  border-left: 5px solid #3155ab;
+  background: #f5f7ff;
+}
+
+.p1 {
+  font-weight: 700;
+  color: #3155ab;
+}
+
+.p2 {
+  color: #3155ab;
+  cursor: pointer;
+} */
+
+/* ===== DRAMA CARD ===== */
+.drama-item {
+  height: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(49, 85, 171, 0.5);
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drama-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(49, 85, 171, 0.8);
+}
+
+/* ===== IMAGE ===== */
+.img-wrapper {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-bottom: 1px solid #3155ab;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.drama-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== TITLE ===== */
+.title {
+  padding: 12px 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  /* color: #222; */
+  line-height: 1.3;
+  height: calc(1.3em * 2.8); /* force exactly 2 lines */
+  overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2; 
+   -webkit-box-orient: vertical;
+}
+
+/* sideBar */
+.sideContent{
+  overflow: auto;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  scrollbar-width: none;
+}
+.border-right{
+  width: 100%;
+  height: 100px;
+  top: -16px;
+  /* padding: 20px; */
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
