@@ -7,7 +7,7 @@ export const useListMovieStore = defineStore("listMovie", {
                 id: 1,
                 category: "china",
                 name: "Hang Knung Vong Chorchork",
-                image: "m1.jpg",
+                image: "../public/m1.jpg",
                 active: false
             },
             {
