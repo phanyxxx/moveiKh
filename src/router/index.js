@@ -16,6 +16,11 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/home',
+      name: 'home1',
+      component: HomeView,
+    },
+    {
       path: '/daily-update',
       name: 'daily-update',
       component: DailyUpdateView
@@ -43,5 +48,4 @@ const router = createRouter({
     }
   ],
 })
-
 export default router

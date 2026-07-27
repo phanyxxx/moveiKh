@@ -47,7 +47,7 @@ const prevPage = () => {
                alt="Video Poster"
              /> -->
               <video controls>
-                <source src="/public/images/v1.mp4" type="video/mp4">
+                <source src="/images/v1.mp4" type="video/mp4">
               </video>
              <!-- <div class="play-overlay">
                <i class="fas fa-play-circle display-1 text-white"></i>

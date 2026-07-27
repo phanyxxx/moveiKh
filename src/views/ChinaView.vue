@@ -30,7 +30,7 @@ const noData = ref(false);
             <div class="drama-item">
               <RouterLink :to="{ name: 'movie-detail', params: { id: item.id } }">
                 <div class="img-wrapper">
-                  <img :src="`/public/images/${item.image}`" :alt="item.name" />
+                  <img :src="`/images/${item.image}`" :alt="item.name" />
                 </div>
                 <h4 class="title">{{ item.name }}</h4>
               </RouterLink>
@@ -53,7 +53,7 @@ const noData = ref(false);
               <div class="drama-item">
                 <RouterLink :to="{ name: 'movie-detail', params: { id: item.id } }">
                   <div class="img-wrapper">
-                    <img :src="`/public/images/${item.image}`" :alt="item.name" />
+                    <img :src="`/images/${item.image}`" :alt="item.name" />
                   </div>
                   <h4 class="title">{{ item.name }}</h4>
                 </RouterLink>
@@ -75,7 +75,7 @@ const noData = ref(false);
               <div class="drama-item">
                 <RouterLink :to="{ name: 'movie-detail', params: { id: item.id } }">
                   <div class="img-wrapper">
-                    <img :src="`/public/images/${item.image}`" :alt="item.name" />
+                    <img :src="`/images/${item.image}`" :alt="item.name" />
                   </div>
                   <h4 class="title">{{ item.name }}</h4>
               </RouterLink>
@@ -97,7 +97,7 @@ const noData = ref(false);
               <div class="drama-item">
                 <RouterLink :to="{ name: 'movie-detail', params: { id: item.id } }">
                   <div class="img-wrapper">
-                    <img :src="`/public/images/${item.image}`" :alt="item.name" />
+                    <img :src="`/images/${item.image}`" :alt="item.name" />
                   </div>
                   <h4 class="title">{{ item.name }}</h4>
                 </RouterLink>
@@ -119,7 +119,7 @@ const noData = ref(false);
               <div class="drama-item">
                 <RouterLink :to="{ name: 'movie-detail', params: { id: item.id } }">
                   <div class="img-wrapper">
-                    <img :src="`/public/images/${item.image}`" :alt="item.name" />
+                    <img :src="`/images/${item.image}`" :alt="item.name" />
                   </div>
                 </RouterLink>
               </div>
